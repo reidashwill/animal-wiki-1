@@ -3,11 +3,16 @@ $(document).ready(function() {
     event.preventDefault();
       var selector = $("#selector").val();
       if(selector === "turtle") {
-        $()
+        $('#snakes').hide();
+        $('#insects').hide();
         $('#turtles').show();
       } else if(selector === "snake") {
+        $('#turtles').hide();
+        $('#insects').hide();
         $('#snakes').show();
       } else if(selector === "insect") {
+        $('#turtles').hide();
+        $('#snakes').hide();
         $('#insects').show();
       }  
   });
